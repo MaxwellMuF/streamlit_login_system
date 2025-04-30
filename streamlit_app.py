@@ -41,7 +41,7 @@ def main():
         page_navigator = st.navigation(pages_bevor_login())
         page_navigator.run()
     
-    # Show pages after a user is logged in (Note: st.authenticator uses browser cookies)
+    # Show pages after a user is logged in
     elif st.session_state.logged_in:
         page_navigator = st.navigation(pages_after_login())
         page_navigator.run()
